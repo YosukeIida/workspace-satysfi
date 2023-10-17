@@ -32,6 +32,6 @@ dockerImage="$author/$projectName:$dockerTag"
 dockerFileName=Dockerfile
 
 # $workspace's files
-mainSrcFileName=main.saty
-mainPdfFileName=main_test.pdf
+mainSrcFileName=slide.saty
+mainPdfFileName=slide_output.pdf
 

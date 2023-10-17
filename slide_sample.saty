@@ -1,0 +1,38 @@
+% ヘッダ開始
+@require: class-slydifi/theme/akasaka
+@require: figbox/figbox
+@require: enumitem/enumitem
+% ヘッダ終了
+
+% プリアンブル開始
+open FigBox
+
+in % プリアンブル終了
+
+document '< % 本文開始
+
+% 本文の一番最初に置く
++make-title(|
+  title = {
+    |\SLyDIFi; デモ用スライド
+    |【複数行書くこともできるよ】
+    |};
+  author = {|Yosuke.I|};
+  date = {|2023年10月18日|};
+|);
+
++frame{基本的なフレーム}<
+  +p{
+    `+p{}` コマンドを使うと\emph{段落}を記述できる。
+    `+listing{}` コマンドを使うと\text-color(Color.red){箇条書き}を記述できる。
+  }
+  +listing{
+    * マークアップ用のインラインコマンドをデフォルトで提供
+      ** バッククォートで囲まれた箇所は自動的にコードとして扱われる
+      ** `\emph{text}` でテキストを強調できる
+      ** `\text-color(color){text}` でテキストの表示色を変更できる
+    * その他にも様々なコマンドがある（テーマによって実装されているコマンドは異なる）
+  }
+>
+
+> % 本文終了

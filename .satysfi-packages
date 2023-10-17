@@ -24,6 +24,10 @@ class-jlreq.0.0.3
 class-slydifi.0.4.0 
 class-exdesign.0.3.1
 
+# fonts
+fonts-noto-sans
+fonts-noto-sans-cjk-jp
+
 # option
 #latexcmds.0.1.0
 #fss.0.2.0
